@@ -1,4 +1,3 @@
-
 /*
 Copyright 2017 MechMerlin <mechmerlin@gmail.com>
 
@@ -50,6 +49,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN D6
 #define RGBLED_NUM 17
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 150
+
+#define AUTO_SHIFT_TIMEOUT 145
+#define NO_AUTO_SHIFT_SPECIAL
 
 #endif
