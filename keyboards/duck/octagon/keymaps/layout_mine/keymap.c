@@ -3,6 +3,7 @@
 //Layers
 #define _BL 0
 #define _FL 1
+#define _SL 2
 
 #define TD_ESC TD(TD_ESC_CAPS)
 #define KC_OTAB LCTL(KC_T)
@@ -24,7 +25,7 @@
 
 //testing stuff
 
-void backlight_init_ports(void);
+// void backlight_init_ports(void);
 // void indicator_leds_set([1 1 1 1 1 1 1 1]);
 // void indicator_leds_set(bool leds[8]);
 // void backlight_toggle_rgb(bool enabled);
@@ -32,6 +33,15 @@ void backlight_init_ports(void);
 // void backlight_init_ports(void);
 // void send_color(uint8_t r, uint8_t g, uint8_t b, enum Device device);
 // void show(void);
+
+void numlock_led_on(void) {
+  PORTF |= (1 << 7);
+}
+
+void numlock_led_off(void) {
+  PORTF &= ~(1 << 7);
+}
+
 
 //end testing stuff
 
@@ -107,17 +117,7 @@ void cp_reset (qk_tap_dance_state_t *state, void *user_data) {
   }
 }
 
-//TODO Move to a macro on layer
-//Enter previous command
-void up_enter_finished (qk_tap_dance_state_t *state, void *user_data) {
-  if (state->count == 1) { register_code(KC_ENTER); }
-  else if (state->count == 2) { register_code(KC_UP); register_code(KC_ENTER); } 
-}
-
-void up_enter_reset (qk_tap_dance_state_t *state, void *user_data) {
-  if (state->count == 1) { unregister_code(KC_ENTER); }
-  else if (state->count == 2) { unregister_code(KC_UP); unregister_code(KC_ENTER); } 
-}
+//TODO Move up+enter to a macro on layer
 
 //Tap Dance Definitions
 qk_tap_dance_action_t tap_dance_actions[] = {
@@ -125,13 +125,10 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     [TD_CP] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, cp_finished, cp_reset)
 };
 
-void indicator_leds_set(bool leds[8]);
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	
     [_BL] = LAYOUT_75_ansi(\
-        TD_ESC,   WIN_SQ1,  WIN_SQ2,  WIN_SQ3,  WIN_SQ4,  WIN_L,  WIN_D,  WIN_U,  WIN_R,   WIN_M,   WIN_C,  KC_F11,  KC_F12,  KC_PSCR, KC_Q, RGB_MOD,
+        TD_ESC,   WIN_SQ1,  WIN_SQ2,  WIN_SQ3,  WIN_SQ4,  WIN_L,  WIN_D,  WIN_U,  WIN_R,   WIN_M,   WIN_C,  KC_F11,  F(numlock_led_on),  KC_NLCK, BL_TOGG, RGB_MOD,
         KC_GRV,   KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   KC_6,   KC_7,   KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,     KC_QUOT,    RGB_TOG,
         KC_TAB,   KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC,   KC_BSLS,     KC_MUTE,
         MO(_FL),  KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,    KC_L,    KC_SCLN, KC_BSPC,            KC_ENTER,    KC_VOLU,
