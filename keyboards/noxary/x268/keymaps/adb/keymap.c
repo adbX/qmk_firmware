@@ -6,6 +6,7 @@
 #define SL 2
 #define WL 3
 #define MAC 4
+#define LI 5
 
 #define TD_ESC TD(TD_ESC_CAPS)
 #define S_OTAB LCTL(KC_T)
@@ -55,18 +56,18 @@ enum {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BL] = LAYOUT_65_ansi(
-        TD_ESC,  KC_1,    KC_2,    KC_3,   KC_4,    KC_5,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_MINS, KC_EQL,  KC_BSLS, KC_QUOT, KC_GRV,
-        KC_TAB,  KC_Q,    KC_W,    KC_E,   KC_R,    KC_T,  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,     KC_LBRC, KC_RBRC,          KC_QUOT, KC_MUTE,
-        MO(FL),  KC_A,    KC_S,    KC_D,   KC_F,    KC_G,  KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,  KC_BSPC, KC_NUHS,          KC_ENT,  KC_VOLU,
-        KC_LSFT, MO(SL),  KC_Z,    KC_X,   KC_C,    KC_V,  KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,   KC_SLSH, KC_RSFT,          KC_UP,   KC_VOLD,
+        TD_ESC,  KC_1,    KC_2,    KC_3,   KC_4,    KC_5,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_MINS, KC_EQL,  KC_BSLS, MO(LI) , KC_GRV,
+        KC_TAB,  KC_Q,    KC_W,    KC_E,   KC_R,    KC_T,  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,     KC_LBRC, KC_ENT,           KC_QUOT, KC_MUTE,
+        MO(FL),  KC_A,    KC_S,    KC_D,   KC_F,    KC_G,  KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,  KC_BSPC, KC_NUHS,          KC_RBRC,  KC_VOLU,
+        KC_LSPO, MO(SL),  KC_Z,    KC_X,   KC_C,    KC_V,  KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,   KC_SLSH, KC_RSPC,          MO(WL),  KC_VOLD,
         KC_LCTL, KC_LGUI, KC_LALT,                         KC_SPC,                    MO(WL),  KC_LGUI,  KC_NUHS, KC_LEFT,          KC_DOWN, KC_RGHT),
 
     [FL] = LAYOUT_65_ansi(
-        KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,    KC_F10,  KC_F11,  KC_F12,  _______, BL_TOGG,  RGB_TOG,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______,          BL_INC,   RGB_MOD,
-        _______, _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, _______, _______, _______,          BL_DEC,   RGB_RMOD,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______,          BL_BRTG,  RGB_VAI,
-        _______, _______, _______,                            _______,                   _______,  _______, _______, _______,          RGB_M_SW, RGB_VAD),
+        KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,    KC_F10,  KC_F11,    KC_F12,  _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______,   _______,          _______, _______,
+        _______, _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, _______, KC_DELETE, _______,          _______, _______,
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______,   _______,          _______, _______,
+        _______, _______, _______,                            _______,                   _______,  _______, _______,   _______,          _______, _______),
 
     [SL] = LAYOUT_65_ansi(
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RESET,
@@ -89,6 +90,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______, _______,
         _______, _______, _______,                            _______,                   _______, _______, _______, _______,          _______, _______),
 
+    [LI] = LAYOUT_65_ansi(
+        RGB_TOG, RGB_MOD, RGB_RMOD, RGB_SAI, RGB_SAD, RGB_HUI, RGB_HUD, RGB_M_P, RGB_M_SW, _______, _______, _______, _______, _______, _______, _______,
+        BL_TOGG, BL_INC,  BL_DEC,   BL_BRTG, _______, _______, _______, _______, _______,  _______, _______, _______, _______,          _______, _______,
+        _______, _______, _______,  _______, _______, _______, _______, _______, _______,  _______, _______, _______, _______,          _______, _______,
+        _______, _______, _______,  _______, _______, _______, _______, _______, _______,  _______, _______, _______, _______,          _______, _______,
+        _______, _______, _______,                             _______,                    _______, _______, _______, _______,          _______, _______),
 
 };
 
