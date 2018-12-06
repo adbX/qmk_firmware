@@ -85,7 +85,7 @@
   { k31,   k32,   k33,   k34,   k35,   k36,   k37,   k38,   k39,   k40,   k41,   k42,   k43,   k44, k45 }, \
   { k46,   k47,   k48,   k49,   k50,   k51,   k52,   k53,   k54,   k55,   k56,   k57,   KC_NO, k58, k59 }, \
   { k60,   KC_NO, k61,   k62,   k63,   k64,   k65,   k66,   k67,   k68,   k69,   k70,   k71,   k72, k73 }, \
-  { k74,   k82,   k75,   KC_NO, KC_NO, k76,   KC_NO, KC_NO, k77,   KC_NO, KC_NO, KC_NO, k78,   k79, k80 }, \
+  { k74,   KC_NO, k82,   k75,   KC_NO, k76,   KC_NO, KC_NO, k77,   KC_NO, KC_NO, KC_NO, k78,   k79, k80 }, \
   { KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, k15, k30 } \
 }
 
