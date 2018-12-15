@@ -1,0 +1,314 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"MAX",
+				"CUDA_MAX_NUM_THREADS"
+			],
+			[
+				"block",
+				"blockIdx"
+			],
+			[
+				"KC",
+				"KC_ENTER"
+			],
+			[
+				"KC_B",
+				"KC_BSPC"
+			],
+			[
+				"LCTRL",
+				"KC_LCTRL"
+			],
+			[
+				"TD",
+				"TD_ESC"
+			],
+			[
+				"up",
+				"up_enter_reset"
+			],
+			[
+				"un",
+				"up_enter_finished"
+			],
+			[
+				"KC_",
+				"KC_LCTRL"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "keyboards/singa/keymaps/adb/keymap.c",
+			"settings":
+			{
+				"buffer_size": 7890,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"theme",
+				"gruvbox: Select Theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/adb",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/hhkb",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/noxary",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/m10a"
+	],
+	"file_history":
+	[
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/adb/rules.mk",
+		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/gemmUnrolledMatrixMult.cuh",
+		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/new-forward-gemm-matrixmultiplication.cuh",
+		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/new-forward-without-mm.cuh",
+		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/new-forward-old.cuh",
+		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/new-forward.h",
+		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/new-forward.cuh",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/singa.h",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/noxary/x268/keymaps/adb/keymap.c",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/amnesia0287/keymap.c",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/noxary/x268/keymaps/adb/rules.mk",
+		"/C/Program Files/PTC/Creo 4.0/M010/Common Files/text/config.pro",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/default/keymap.c",
+		"/K/19_november_ravi_m850i/DSCF1875.RAF",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/duck/octagon/keymaps/default/keymap.c",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/noxary/x268/keymaps/adb/config.h",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/duck/octagon/keymaps/layout_mine/keymap.c",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/noxary/268_2/keymaps/adb/keymap.c",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/noxary/x268/keymaps/default/keymap.c",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/noxary/268_2/268_2.c",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/duck/octagon/keymaps/layout_mine/layers.json",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/duck/octagon/rules.mk",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/duck/octagon/v2/config.h",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/duck/octagon/v2/rules.mk",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/duck/octagon/keymaps/layout_mine/keymap.c.bkp.c",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/quantum/quantum.c",
+		"/C/Users/adb/Downloads/qmk_firmware-duck-octagon-v2-layout_mine/qmk_firmware/keyboards/duck/octagon/keymaps/default/keymap.c",
+		"/C/Users/adb/Downloads/qmk_firmware-duck-octagon-v2-layout_mine/qmk_firmware/keyboards/duck/octagon/keymaps/layout_mine/keymap.c",
+		"/C/Users/adb/Desktop/mp4.cpp",
+		"/C/Users/adb/.hyper.js",
+		"/G/My Drive/sum18/tea/discussion4main.txt"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 146.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"yes"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "keyboards/singa/keymaps/adb/keymap.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1316,
+								1316
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 70,
+								"count": 636,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 59.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "qmk-win-wsl.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
