@@ -44,12 +44,29 @@
 	"buffers":
 	[
 		{
-			"file": "keyboards/singa/keymaps/adb/keymap.c",
+			"file": "keyboards/hhkb/keymaps/adb/keymap.c",
 			"settings":
 			{
-				"buffer_size": 7890,
+				"buffer_size": 2875,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "keyboards/singa/matrix.c",
+			"settings":
+			{
+				"buffer_size": 2749,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "adb7\npay 400\nship singa+olivia = 900 with shipping\n\nbengine99\npay 900\nship qxp",
+			"settings":
+			{
+				"buffer_size": 78,
+				"line_ending": "Windows",
+				"name": "adb7"
 			}
 		}
 	],
@@ -110,14 +127,15 @@
 	"expanded_folders":
 	[
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa",
-		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps",
-		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/adb",
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/hhkb",
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/noxary",
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/m10a"
 	],
 	"file_history":
 	[
+		"/G/My Drive/sales/mechmarket_20_jan/sale_20jan.txt",
+		"/G/My Drive/sales/mechmarket_22_jan/poly_singa_sale.txt",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/adb/keymap.c",
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/adb/rules.mk",
 		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/gemmUnrolledMatrixMult.cuh",
 		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/new-forward-gemm-matrixmultiplication.cuh",
@@ -166,6 +184,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Fvz9Ovy",
 			"yes"
 		],
 		"highlight": true,
@@ -184,32 +203,62 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "keyboards/singa/keymaps/adb/keymap.c",
+					"file": "keyboards/hhkb/keymaps/adb/keymap.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7890,
+						"buffer_size": 2875,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1316,
-								1316
+								24,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "keyboards/singa/matrix.c",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 70,
-								"count": 636,
+								"changes": 0,
+								"count": 235,
 								"modified": false,
 								"selection": false,
 								"status": -1,
@@ -220,10 +269,47 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 810.0,
+						"translation.y": 140.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 78,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 9,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"auto_name": "adb7",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -305,8 +391,8 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 245.0,
+	"side_bar_visible": false,
+	"side_bar_width": 179.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
