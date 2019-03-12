@@ -87,3 +87,39 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 qk_tap_dance_action_t tap_dance_actions[] = {
     [TD_ESC_CAPS]  = ACTION_TAP_DANCE_DOUBLE(KC_ESC, KC_CAPS),
 };
+
+void matrix_scan_user(void) {
+    uint8_t layer = biton32(layer_state);
+
+    PORTB &= ~(1<<2);
+    PORTB &= ~(1<<3);
+    switch (layer) {
+        case 2:
+            PORTB |= (1<<3);
+            break;
+        case 3:
+            PORTB |= (1<<2);
+            break;
+        default:
+            break;
+    }
+
+};
+
+void led_set_user(uint8_t usb_led) {
+    if (usb_led & (1<<USB_LED_NUM_LOCK)) {
+        PORTB |= (1<<0);
+    } else {
+        PORTB &= ~(1<<0);
+    }
+    if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
+        PORTB |= (1<<1);
+    } else {
+        PORTB &= ~(1<<1);
+    }
+    if (usb_led & (1<<USB_LED_SCROLL_LOCK)) {
+        PORTB |= (1<<2);
+    } else {
+        PORTB &= ~(1<<2);
+    }
+}

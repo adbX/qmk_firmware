@@ -56,8 +56,24 @@
 			"file": "keyboards/alice/keymaps/adb/keymap.c",
 			"settings":
 			{
-				"buffer_size": 3767,
+				"buffer_size": 4462,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "keyboards/singa/keymaps/adb/keymap.c",
+			"settings":
+			{
+				"buffer_size": 7891,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "keyboards/alice/alice.c",
+			"settings":
+			{
+				"buffer_size": 1422,
 				"line_ending": "Unix"
 			}
 		},
@@ -66,6 +82,7 @@
 			"settings":
 			{
 				"buffer_size": 1231,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -79,10 +96,10 @@
 			}
 		},
 		{
-			"file": "keyboards/singa/keymaps/adb/keymap.c",
+			"file": "keyboards/alice/program",
 			"settings":
 			{
-				"buffer_size": 7891,
+				"buffer_size": 3888,
 				"line_ending": "Unix"
 			}
 		}
@@ -151,6 +168,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/adb/keymap.c",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/alice/alice.h",
+		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/alice/usbconfig.h",
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/alice/keymaps/mrkeebs/keymap.c",
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/alice/keymaps/default/keymap.c",
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/dz60/keymaps/Ansi_plus_fn_arrows/keymap.c",
@@ -161,7 +181,6 @@
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/hhkb/keymaps/adb/keymap.c",
 		"/G/My Drive/sales/mechmarket_20_jan/sale_20jan.txt",
 		"/G/My Drive/sales/mechmarket_22_jan/poly_singa_sale.txt",
-		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/adb/keymap.c",
 		"/C/Users/adb/Desktop/stuff/qmk_firmware/keyboards/singa/keymaps/adb/rules.mk",
 		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/gemmUnrolledMatrixMult.cuh",
 		"/C/Users/adb/Desktop/stuff/ece408finalproject/ece408_src/new-forward-gemm-matrixmultiplication.cuh",
@@ -196,7 +215,7 @@
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -210,6 +229,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"led",
 			"KC_M",
 			"TD_ESC",
 			"7u",
@@ -260,7 +280,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -269,23 +289,23 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3767,
+						"buffer_size": 4462,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								862,
-								862
+								3766,
+								3766
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 54,
-								"count": 290,
+								"changes": 0,
+								"count": 324,
 								"modified": false,
 								"selection": false,
 								"status": -1,
@@ -296,14 +316,99 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 430.0,
+						"translation.y": 1292.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "keyboards/singa/keymaps/adb/keymap.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2667,
+								2703
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 636,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 983.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "keyboards/alice/alice.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								909,
+								925
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 151,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "keyboards/alice/config.h",
 					"semi_transient": false,
 					"settings":
@@ -315,8 +420,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1148,
+								1150
 							]
 						],
 						"settings":
@@ -331,7 +436,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "keyboards/alice/rules.mk",
 					"semi_transient": false,
 					"settings":
@@ -352,40 +457,48 @@
 							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 133.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "keyboards/singa/keymaps/adb/keymap.c",
+					"buffer": 6,
+					"file": "keyboards/alice/program",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7891,
+						"buffer_size": 3888,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2667,
-								2703
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.sublime-syntax",
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "python"
+							},
+							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 934.0,
+						"translation.y": 940.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -393,7 +506,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 37.0
 	},
 	"input":
 	{
@@ -408,11 +521,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -430,7 +550,7 @@
 	"project": "qmk-win-wsl.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -460,7 +580,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
