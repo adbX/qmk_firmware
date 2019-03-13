@@ -1,5 +1,7 @@
 #include QMK_KEYBOARD_H
 
+
+
 // Layers
 #define BL 0
 #define FL 1
@@ -94,40 +96,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Tap Dance Definitions
 qk_tap_dance_action_t tap_dance_actions[] = {
     [TD_ESC_CAPS]  = ACTION_TAP_DANCE_DOUBLE(KC_ESC, KC_CAPS),
-};
-
-void matrix_scan_user(void) {
-    uint8_t layer = biton32(layer_state);
-
-    PORTB &= ~(1<<2);
-    PORTB &= ~(1<<3);
-    switch (layer) {
-        case 2:
-            PORTB |= (1<<3);
-            break;
-        case 3:
-            PORTB |= (1<<2);
-            break;
-        default:
-            break;
-    }
-
-};
+}; 
 
 void led_set_user(uint8_t usb_led) {
-    if (usb_led & (1<<USB_LED_NUM_LOCK)) {
-        PORTB |= (1<<0);
-    } else {
-        PORTB &= ~(1<<0);
+    if (IS_LED_ON(usb_led, USB_LED_NUM_LOCK)) {
+        PORTD |= (1 << USB_LED_NUM_LOCK);
     }
-    if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
-        PORTB |= (1<<1);
-    } else {
-        PORTB &= ~(1<<1);
+    else{
+        PORTD &= ~(1 << USB_LED_NUM_LOCK);
     }
-    if (usb_led & (1<<USB_LED_SCROLL_LOCK)) {
-        PORTB |= (1<<2);
-    } else {
-        PORTB &= ~(1<<2);
+
+    if (IS_LED_ON(usb_led, USB_LED_CAPS_LOCK)) {
+        PORTD |= (1 << USB_LED_CAPS_LOCK);
+    }
+    else{
+        PORTD &= ~(1 << USB_LED_CAPS_LOCK);
+    }
+
+    if (IS_LED_ON(usb_led, USB_LED_SCROLL_LOCK)) {
+        PORTD |= (1 << 4);
+    }
+    else{
+        PORTD &= ~(1 << 4);
     }
 }
