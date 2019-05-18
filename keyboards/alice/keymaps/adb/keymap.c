@@ -112,6 +112,6 @@ void led_set_user(uint8_t usb_led) {
         PORTD |= (1 << USB_LED_SCROLL_LOCK);
     }
     else{
-        PORTD |= (1 << USB_LED_SCROLL_LOCK);
+        PORTD &= ~(1 << USB_LED_SCROLL_LOCK);
     }
 }
