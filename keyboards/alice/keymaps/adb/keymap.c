@@ -2,9 +2,10 @@
 
 // Layers
 #define BL 0
-#define WIN 1
-#define FL 2
-#define SL 3
+#define GAME 1
+#define WIN 2
+#define FL 3
+#define SL 4
 
 #define TD_ESC TD(TD_ESC_CAPS)
 #define S_OTAB LCTL(KC_T)
@@ -59,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_GRV,     TD_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_DEL,  KC_BSLS, \
         KC_VOLU,    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_ENT, KC_RBRC,          \
         KC_VOLD,    MO(FL),  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_BSPC,          KC_QUOT,           \
-                    KC_LSPO, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    TG(WIN),  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSPC, MO(SL),            \
+                    KC_LSPO, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    TG(GAME),  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSPC, MO(SL),            \
                     KC_RCTL,          KC_LALT,          MO(SL),  KC_LGUI,          KC_SPC,           KC_RALT,                            KC_RCTL           \
     ),
 
@@ -84,8 +85,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,    _______, _______, WIN_U,   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          \
         _______,    _______, WIN_L,   WIN_D,   WIN_R,   _______, _______, _______, _______, _______, _______, _______, _______, _______,                   \
                     _______, _______, _______, _______, _______, _______, _______, WIN_N, WIN_M, _______, _______, _______, _______, _______,          \
-                    _______,          _______,          KC_SPC, _______,          _______,          _______,                            _______           \
+                    _______,          _______,          _______, _______,          _______,          _______,                            _______           \
     ),
+
+    [GAME] = LAYOUT(
+        _______,    _______ , _______,   _______,   _______,   _______,    _______,   _______,   _______,   _______,   _______,    _______,  _______,  _______,  _______,  _______,  \
+        _______,    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______, _______,  _______, _______  , _______, _______,          \
+        _______,    _______,  _______,  _______,  _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______,                   \
+                    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______, _______,          \
+                    _______,          _______,          KC_SPC, KC_LALT,          _______,          _______,                            _______           \
+    ),
+
 };
 
 // Tap Dance Definitions
