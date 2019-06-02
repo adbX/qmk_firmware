@@ -49,7 +49,7 @@ SLEEP_LED_ENABLE = yes  # Breathing sleep LED during USB suspend
 NKRO_ENABLE = yes	    # USB Nkey Rollover
 CUSTOM_MATRIX = no # Custom matrix file
 # BACKLIGHT_ENABLE = yes # This is broken on 072 for some reason
-RGBLIGHT_ENABLE = yes
+RGBLIGHT_ENABLE = no
 
 # RAW_ENABLE = yes
 # DYNAMIC_KEYMAP_ENABLE = yes
